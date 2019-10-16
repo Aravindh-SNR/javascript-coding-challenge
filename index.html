@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>JavaScript Coding Challenge</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+    <div id="wrapper">
+
+        <header id="header" class="bg_color">
+            <h1>JavaScript Coding Challenge</h1>
+            <p>Play around! &#128521;</p>
+        </header>
+
+        <main role="main" id="main">
+
+            <section class="code bg_color">
+                <div class="form">
+                    <h2>Clean the room</h2>
+                    <span>Enter an array of numbers and/or string numbers separated by commas, without the box brackets. 
+                          Examples: 1, 2, 4, 591, 392, 391, 2, 5, 10, 2, 1, 1, 1, 20, 20 or 1, "2", "3", 2.</span>
+                    <span>[&nbsp;<input type="text" id="array1">&nbsp;]</span>
+                    <button id="submit_array">Clean array</button>
+                </div>
+                <span id="output_array" class="answer"></span>
+            </section>
+
+            <section class="code bg_color">
+                <div class="form">
+                    <h2>Check for a sum</h2>
+                    <span>Enter an array of at least two numbers separated by commas, without the box brackets. Example: 1, 2, 3.</span>
+                    <span>[&nbsp;<input type="text" id="array2">&nbsp;]</span>
+                    <span>Enter the target sum:</span>
+                    <input type="number" name="sum" id="sum" required>
+                    <button id="submit_sum">Get matching pairs</button>
+                    </form>
+                </div>
+                <span id="output_sum" class="answer"></span>
+            </section>
+
+            <section class="code bg_color">
+                <div class="form">
+                    <h2>Rgb &lt;&equals;&gt; Hex color convertor</h2>
+                    <span>Enter the color in hex or rgb format. Examples: #FFF, #FFFFFF, rgb(198, 0, 255).</span>
+                    <input type="text" id="color">
+                    <button id="submit_color">Convert color</button>
+                </div>
+                <span id="output_color" class="answer"></span>
+            </section>
+        </main>
+
+        <footer id="footer" class="bg_color">
+            Note: Spaces in the arrays are optional and the color input is case-insensitive.<br>
+            For more details on the problem statement that each section solves, please visit the 
+            <a href="https://aravindh-snr.github.io/javascript-coding-challenge/" target="_blank">Github repository</a>
+        </footer>
+
+    </div>
+    
+    <script src="exercise1.js"></script>
+    <script src="exercise2.js"></script>
+    <script src="exercise3.js"></script>
+</body>
+</html>
